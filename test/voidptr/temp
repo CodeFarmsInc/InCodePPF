@@ -1,0 +1,3 @@
+    // NEXT TWO LINES
+    PTR(PersistVoid) pv; // = new PersistVoid();
+    pv.newArr(100); // allocate array of PersistVoid

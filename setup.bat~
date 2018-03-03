@@ -1,0 +1,4 @@
+copy c:\incode\alib\codegen.exe .
+cd .\test
+cl diff.cpp
+cd .\..

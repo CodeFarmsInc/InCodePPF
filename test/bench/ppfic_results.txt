@@ -1,0 +1,99 @@
+
+1000;;;
+;1;Library creation [ms];61.00
+;2;Sort by vote [ms];22.00
+;3;Library saving [ms];4.00
+;4;File size [MB];0.13
+
+10000;;;
+;1;Library creation [ms];517.00
+;2;Sort by vote [ms];98.00
+;3;Library saving [ms];6.00
+;4;File size [MB];0.84
+;5;Library reopen;0.00
+;6;Top voted books [ms];5.00
+;7;Search book by title [ms];13.00
+;8;Data reduction [ms];37.00
+;9;File size [MB];0.84
+
+
+
+
+
+10000;;;
+;1;Library creation [ms];503.00
+;2;Sort by vote [ms];79.00
+;3;Library saving [ms];6.00
+;4;File size [MB];0.84
+
+100000;;;
+;1;Library creation [ms];5345.00
+;2;Sort by vote [ms];936.00
+;3;Library saving [ms];27.00
+;4;File size [MB];8.12
+;5;Library reopen;0.00
+;6;Top voted books [ms];3.00
+;7;Search book by title [ms];159.00
+;8;Data reduction [ms];370.00
+;9;File size [MB];8.12
+
+
+
+
+
+1000000;;;
+;1;Library creation [ms];29371.00
+;2;Sort by vote [ms];10205.00
+;3;Library saving [ms];306.00
+;4;File size [MB];81.36
+;5;Library reopen;0.00
+;6;Top voted books [ms];7.00
+;7;Search book by title [ms];16181.00
+;8;Data reduction [ms];25048.00
+;9;File size [MB];81.36
+
+
+
+
+
+1000000;;;
+;1;Library creation [ms];9513.00
+;2;Sort by vote [ms];6956.00
+;3;Library saving [ms];501.00
+;4;File size [MB];81.33
+;5;Library reopen;1.00
+;6;Top voted books [ms];2.00
+;7;Search book by title [ms];28595.00
+;8;Data reduction [ms];37134.00
+;9;File size [MB];81.33
+
+
+
+
+
+5000000;;;
+;1;Library creation [ms];146773.00
+;2;Sort by vote [ms];55158.00
+;3;Library saving [ms];5746.00
+;4;File size [MB];422.79
+
+5000000;;;
+;1;Library creation [ms];118643.00
+;2;Sort by vote [ms];38674.00
+;3;Library saving [ms];9781.00
+;4;File size [MB];422.77
+
+10000;;;
+;1;Library creation [ms];508.00
+;2;Sort by vote [ms];78.00
+;3;Library saving [ms];6.00
+;4;File size [MB];0.84
+;5;Library reopen;0.00
+;6;Top voted books [ms];6.00
+;7;Search book by title [ms];13.00
+;8;Data reduction [ms];40.00
+;9;File size [MB];0.84
+
+
+
+

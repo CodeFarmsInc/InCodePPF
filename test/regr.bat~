@@ -1,0 +1,14 @@
+cl diff.cpp
+REM --------
+cd .\array
+call regr
+cd .\..
+REM --------
+cd .\testabc
+call regr
+cd .\..
+REM --------
+cd .\hash
+call regr
+cd .\.
+REM --------

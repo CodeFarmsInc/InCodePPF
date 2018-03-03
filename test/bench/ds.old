@@ -1,0 +1,11 @@
+DataStructure Aggregate2<Library,Book> listBooksByName;
+DataStructure Aggregate2<Library,Book> listBooksByOrder;
+DataStructure Array<Library,GenrePtr> genres; 
+DataStructure LinkedList1<Book,Chapter> chaptersByName;
+DataStructure 2XtoX<GenToBook,Genre,Book> genreToBook;
+DataStructure Name<Book> bookName;
+DataStructure Name<Genre> genName;
+DataStructure Name<Chapter> chapName;
+
+// next section removed by Jiri
+// DataStructure Array<Book,bTime> borrowingTimes; // bTime hides 'int' time

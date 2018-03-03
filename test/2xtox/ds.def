@@ -1,0 +1,4 @@
+
+DataStructure LinkedList1<Faculty,Student> students;
+DataStructure LinkedList1<Faculty,Course> courses;
+DataStructure 2XtoX<Takes,Student,Course> takes;

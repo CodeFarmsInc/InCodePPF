@@ -1,0 +1,76 @@
+
+// -------- data structure DOUBLY LINKED RING ---------------
+// EQUIVALENT OF:
+// template <class Node> class AtoB_Ring2
+// ----------------------------------------------------------
+// Ring2 could be derived from Ring2 through inheritance, but
+//  (a) The complex functions (sort, remove, merge) are different anyway,
+//  (b) we want to minimize the number of classes which will be code generated.
+// For these two reasons, Ring2 is coded as a base class.
+// ----------------------------------------------------------
+#ifndef ZZ_AtoB_RING2_INCLUDED
+#define ZZ_AtoB_RING2_INCLUDED
+
+#include "environ.h"
+#include "c:\ppf\factory.h"
+
+class B;
+typedef int (*AtoB_sortFun)(const PTR(B), const PTR(B));
+
+// ----------------------------------------------------------
+// description of the cooperating classes
+// ----------------------------------------------------------
+class AtoB_Ring2Element {
+public:
+    PTR(B) next;
+    PTR(B) prev;
+    AtoB_Ring2Element(){ next=prev=NULL; }
+};
+
+class AtoB_Ring2 {
+
+    static int debugFun(PTR(B) tail);
+public:
+    // standard interface
+    static PTR(B) addHead(PTR(B) tail, PTR(B) c); // returns new tail
+    static PTR(B) addTail(PTR(B) tail, PTR(B) c); // returns new tail
+    static PTR(B) append(PTR(B) tail,PTR(B) c1, PTR(B) c2); // returns new tail
+    static void insert(PTR(B) c1, PTR(B) c2); // insert c1 before c2
+    static PTR(B) remove(PTR(B) tail, PTR(B) c);  // returns new tail, NULL when empty
+    static PTR(B) const next(PTR(B) p, PTR(B) c); // returns NULL when p is the tail
+    static PTR(B) const prev(PTR(B) p, PTR(B) c); // returns NULL when p is the head
+    static PTR(B) const nextRing(PTR(B) c); // next in the ring
+    static PTR(B) const prevRing(PTR(B) c); // previous in the ring
+    static PTR(B) sort(AtoB_sortFun cmpFun, PTR(B) tail); // returns the new tail
+    static void merge(PTR(B) s,PTR(B) t);
+
+    // historical DOL compatible interface
+    static PTR(B) del(PTR(B) tail, PTR(B) c) { return remove(tail,c); }
+    static PTR(B) add(PTR(B) tail, PTR(B) c) { return addHead(tail,c); }
+    static void ins(PTR(B) c1, PTR(B) c2) { insert(c1,c2); }
+    static PTR(B) const fwd(PTR(B) c){return nextRing(c);}
+    static PTR(B) const bwd(PTR(B) c){return prevRing(c);}
+    
+};
+
+class AtoB_Ring2Iterator {
+    PTR(B) tail; // NULL when loop finished
+    PTR(B) nxt;  // NULL when starting a new loop
+    int dir;  // 0=from head, 1=from tail
+public:
+    // standard interface:          for(p=it.fromHead(x); p; p=it.next()){...}
+    //                              for(p=it.fromTail(x); p; p=it.next()){...}
+    AtoB_Ring2Iterator(){tail=nxt=NULL; dir=0;}
+    PTR(B) fromHead(PTR(B) p);
+    virtual PTR(B) fromTail(PTR(B) p);
+    virtual PTR(B) const next();
+
+    // historical DOL interface:    it.start(x); for(p= ++it; p; p= ++it){...}
+    //                              it.start(x); for(p= --it; p; p= --it){...}
+    void start(PTR(B) p);
+    PTR(B) const operator++();
+    PTR(B) const operator--();
+    AtoB_Ring2Iterator(PTR(B) p){start(p);}
+};
+    
+#endif // ZZ_AtoB_RING2_INCLUDED

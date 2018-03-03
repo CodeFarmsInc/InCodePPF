@@ -1,0 +1,25 @@
+Persistent Pointer Factory Ver.3.8, Copyright(C) 2014 Code Farms Inc.
+student=333
+    course=101 mark=5
+    course=104 mark=4
+    course=105 mark=2
+student=222
+    course=101 mark=3
+    course=103 mark=3
+    course=105 mark=2
+student=111
+    course=101 mark=2
+    course=102 mark=1
+course=105
+    student=222 mark=2
+    student=333 mark=2
+course=104
+    student=333 mark=4
+course=103
+    student=222 mark=3
+course=102
+    student=111 mark=1
+course=101
+    student=111 mark=2
+    student=222 mark=3
+    student=333 mark=5

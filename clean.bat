@@ -1,0 +1,9 @@
+del binheap.res
+del gen.*
+del tmp\*.cpp
+del tmp\*.h
+del *.obj
+del *.exe
+cd test\binheap
+del *.res
+cd ..\..

@@ -1,0 +1,36 @@
+
+c:\incode\ppfIC\test\voidptr>call clean 
+
+c:\incode\ppfIC\test\voidptr>del *~ 
+
+c:\incode\ppfIC\test\voidptr>del *.res 
+
+c:\incode\ppfIC\test\voidptr>del gen.* 
+
+c:\incode\ppfIC\test\voidptr>del tmp\*.cpp 
+
+c:\incode\ppfIC\test\voidptr>del tmp\*.h 
+
+c:\incode\ppfIC\test\voidptr>del *.obj 
+
+c:\incode\ppfIC\test\voidptr>del *.exe 
+
+c:\incode\ppfIC\test\voidptr>del *.ppf 
+
+c:\incode\ppfIC\test\voidptr>..\..\codegen ds.def ..\..\lib gen 
+--- jslib codegen Ver.2.0
+
+c:\incode\ppfIC\test\voidptr>cl /EHsc voidptr.cpp B.cpp c:\ppf\factory.cpp 
+voidptr.cpp
+B.cpp
+factory.cpp
+Generating Code...
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:voidptr.exe 
+voidptr.obj 
+B.obj 
+factory.obj 
+B.obj : error LNK2019: unresolved external symbol "public: class PersistPtr<class PersistVoid> & __thiscall PersistPtr<class PersistVoid>::newArr(long)" (?newArr@?$PersistPtr@VPersistVoid@@@@QAEAAV1@J@Z) referenced in function "public: void __thiscall B::setArray(class PersistPtr<class B>)" (?setArray@B@@QAEXV?$PersistPtr@VB@@@@@Z)
+voidptr.exe : fatal error LNK1120: 1 unresolved externals

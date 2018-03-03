@@ -1,0 +1,14 @@
+
+c:\incode\ppfIC\test\hash>hash1
+Persistent Pointer Factory Ver.3.1, Copyright(C) 2008 Code Farms Inc.
+---calling checkAll(): after creating data
+all results correct
+---calling checkAll(): after re-sizing hash tables
+all results correct
+---calling checkAll(): after removing every second employee
+all results correct
+final check: count=10 - everything OK
+??? cout closing main()
+??? printf closing main()
+error: keeping raw pointer=13465584 for too long
+error: pager dereferencing NULL address

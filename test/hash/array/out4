@@ -1,0 +1,38 @@
+Persistent Pointer Factory Ver.3.1, Copyright(C) 2008 Code Farms Inc.
+search entire array for -10, found match=0 i=0 val=0
+search between[0,24] for 995, found match=0 i=15 val=1000
+search between[0,24] for 1007, found match=1 i=22 val=1007
+search entire array for 1025, found match=0 i=-1
+
+RESULT BEFORE SAVING TO DISK:
+B=0
+0 A=0
+1 A=0
+2 A=0
+3 A=0
+4 A=99
+5 A=981
+6 A=982
+7 A=983
+8 A=984
+9 A=985
+10 A=986
+11 A=987
+12 A=988
+13 A=989
+14 A=990
+15 A=1000
+16 A=1001
+17 A=1002
+18 A=1003
+19 A=1004
+20 A=1005
+21 A=1006
+22 A=1007
+23 A=1008
+24 A=1009
+25 A=1020
+26 A=1021
+27 A=1022
+28 A=1023
+29 A=1024

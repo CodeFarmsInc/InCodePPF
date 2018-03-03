@@ -1,0 +1,22 @@
+
+100000;;;
+;1;Library creation [ms];2286.00
+;2;Sort by vote [ms];946.00
+;3;Library saving [ms];55.00
+;4;File size [MB];8.78
+;5;Library reopen;103.00
+;6;Top voted books [ms];1.00
+;7;Search book by title [ms];74.00
+;8;Data reduction [ms];205.00
+;9;Reduced data saving [ms];24.00
+;10;File size [MB];8.78
+
+
+
+
+
+100000;;;
+;1;Library creation [ms];1908.00
+;2;Sort by vote [ms];728.00
+;3;Library saving [ms];71.00
+;4;File size [MB];8.78

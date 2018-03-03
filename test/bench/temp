@@ -1,0 +1,6 @@
+    Library::startPager(128,2,0,0);
+    Genre::startPager(16000000,200,0,0);
+    Book::startPager(16000000,200,0,0);
+    Chapter::startPager(16000000,200,0,0);
+    GenToBook::startPager(16000000,200,0,0);
+    PersistStart;

@@ -1,0 +1,23 @@
+The library assumes that the PPF library (files factory.h, factory.cpp, and 
+pointer.cpp) is in subdirectory ppf.
+
+Subdirectory alib contains the C++ non-persistent version of InCode library.
+We need it only for codegen.exe, which is the same in plain InCode and in 
+ppfIC. However, if you need to recompile codegen, you need the entire library
+because codegen uses itself(!) when recompilling.
+
+Check file setup.bat copies codegen.exe to this directory.
+
+The description of the data organization is always assumed to be in file ds.def
+(data structure definitions). As with all Code Farms libraries, this file can
+be used as input for the Layout program, which generates the UML class diagram
+of your data organization.
+
+Program test\diff.cpp must be compiled in order to run the tests which
+are under directory 'test'. This is also done in setup.bat
+
+Note that each directory in which you run the test needs a little file environ.h
+which specifies whether the light, 4-byte persistent pointers can be used 
+(PPF_LIGHT defined) or whether full, 8-byte persistent pointers are needed
+(PPF_LIGHT not defined). The light version can be used if your data organization
+does not include inheritance.

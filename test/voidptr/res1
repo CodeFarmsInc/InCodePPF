@@ -1,0 +1,34 @@
+Persistent Pointer Factory Ver.3.1, Copyright(C) 2008 Code Farms Inc.
+PersistVoid pager, active=1
+  B=0
+    C=1 index=16
+    C=2 index=24
+    C=3 index=32
+    C=4 index=40
+    C=5 index=48
+    C=6 index=56
+    C=7 index=64
+    C=8 index=72
+    C=9 index=80
+    C=10 index=88
+print from array:
+    C=1 index=16
+    C=2 index=24
+    C=3 index=32
+    C=4 index=40
+    C=5 index=48
+    C=6 index=56
+    C=7 index=64
+    C=8 index=72
+    C=9 index=80
+    C=10 index=88
+    C=10 index=88
+    C=9 index=80
+    C=8 index=72
+    C=7 index=64
+    C=6 index=56
+    C=5 index=48
+    C=4 index=40
+    C=3 index=32
+    C=2 index=24
+    C=1 index=16

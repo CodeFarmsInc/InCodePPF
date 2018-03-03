@@ -1,0 +1,15 @@
+del *.obj
+del *~
+REM --------
+cd .\array
+call clean
+cd .\..
+REM --------
+cd .\testabc
+call clean
+cd .\..
+REM --------
+cd .\hash
+call clean
+cd .\..
+REM --------

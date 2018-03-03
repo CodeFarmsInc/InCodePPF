@@ -1,0 +1,16 @@
+Persistent Pointer Factory Ver.3.8, Copyright(C) 2014 Code Farms Inc.
+---calling checkAll(): checking data from the disk
+all results correct
+final check: count=10 - everything OK
+
+The list of Employees:
+   flag=2 name=T_name_g ID=1224
+   flag=2 name=R_name_i ID=1225
+   flag=2 name=P_name_k ID=1226
+   flag=2 name=N_name_m ID=1227
+   flag=2 name=L_name_o ID=1228
+   flag=2 name=J_name_q ID=1229
+   flag=2 name=H_name_s ID=1230
+   flag=2 name=F_name_u ID=1231
+   flag=2 name=D_name_w ID=1232
+   flag=2 name=B_name_y ID=1233

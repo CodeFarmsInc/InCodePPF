@@ -1,0 +1,6 @@
+DataStructure LinkedList2<Library,Book> books;
+DataStructure Name<Book> bookTitle;
+DataStructure Name<Book> bookAbstract;
+DataStructure LinkedList2<Library,Author> authors;
+DataStructure Name<Author> authorName;
+DataStructure 2XtoX<BookToAuthor,Book,Author> booksToAuthors;

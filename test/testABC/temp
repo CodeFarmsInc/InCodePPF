@@ -1,0 +1,18 @@
+testABC.cpp
+testB.cpp
+Generating Code...
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:testABC.exe 
+testABC.obj 
+testB.obj 
+testABC.obj : error LNK2019: unresolved external symbol "public: static void __cdecl PersistFactory::synchClasses(void)" (?synchClasses@PersistFactory@@SAXXZ) referenced in function _main
+testABC.obj : error LNK2019: unresolved external symbol "public: void * __thiscall PersistFactory::newObj(void)" (?newObj@PersistFactory@@QAEPAXXZ) referenced in function "public: static void * __cdecl A::operator new(unsigned int)" (??2A@@SAPAXI@Z)
+testABC.obj : error LNK2019: unresolved external symbol "void * PersistAlloc" (?PersistAlloc@@3PAXA) referenced in function "public: static void * __cdecl A::operator new(unsigned int)" (??2A@@SAPAXI@Z)
+testABC.obj : error LNK2019: unresolved external symbol "public: __thiscall PersistFactory::PersistFactory(int *,long,void *,long,long,long,char *,int,void (__cdecl*)(void *),int)" (??0PersistFactory@@QAE@PAHJPAXJJJPADHP6AX1@ZH@Z) referenced in function "public: static void __cdecl A::startPager(long,long,long,int)" (?startPager@A@@SAXJJJH@Z)
+testABC.obj : error LNK2019: unresolved external symbol "public: void __thiscall PersistFactory::closePager(void)" (?closePager@PersistFactory@@QAEXXZ) referenced in function "public: static void __cdecl A::closePager(void)" (?closePager@A@@SAXXZ)
+testABC.obj : error LNK2019: unresolved external symbol "public: long __thiscall PersistFactory::getInd(void *)" (?getInd@PersistFactory@@QAEJPAX@Z) referenced in function "public: class PersistPtr<class B> & __thiscall PersistPtr<class B>::operator=(class B *)" (??4?$PersistPtr@VB@@@@QAEAAV0@PAVB@@@Z)
+testABC.obj : error LNK2019: unresolved external symbol "public: void * __thiscall PersistFactory::getPtr(long)" (?getPtr@PersistFactory@@QAEPAXJ@Z) referenced in function "private: class B * __thiscall PersistPtr<class B>::getPtr(long)const " (?getPtr@?$PersistPtr@VB@@@@ABEPAVB@@J@Z)
+testABC.obj : error LNK2019: unresolved external symbol "public: void __thiscall PersistFactory::freeObj(long)" (?freeObj@PersistFactory@@QAEXJ@Z) referenced in function "public: void __thiscall PersistPtr<class C>::delObj(void)" (?delObj@?$PersistPtr@VC@@@@QAEXXZ)
+testABC.exe : fatal error LNK1120: 8 unresolved externals

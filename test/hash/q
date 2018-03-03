@@ -1,0 +1,9 @@
+#include "environ.h"
+#include "c:\ppf\factory.h"
+#include "gen.h"
+#include "employee.h"
+
+// ------------------------------------------------------------
+void Employee::prt(){
+    printf("EMPLOYEE: addr=%d name=%s ID=%d\n",this,eName::get(this),getID());
+}

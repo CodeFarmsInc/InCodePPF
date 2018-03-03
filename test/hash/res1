@@ -1,0 +1,41 @@
+Persistent Pointer Factory Ver.3.8, Copyright(C) 2014 Code Farms Inc.
+---calling checkAll(): after creating data
+all results correct
+---calling checkAll(): after re-sizing hash tables
+all results correct
+
+The list of Employees:
+   flag=2 name=U_name_f ID=1244
+   flag=2 name=T_name_g ID=1224
+   flag=2 name=S_name_h ID=1243
+   flag=2 name=R_name_i ID=1225
+   flag=2 name=Q_name_j ID=1242
+   flag=2 name=P_name_k ID=1226
+   flag=2 name=O_name_l ID=1241
+   flag=2 name=N_name_m ID=1227
+   flag=2 name=M_name_n ID=1240
+   flag=2 name=L_name_o ID=1228
+   flag=2 name=K_name_p ID=1239
+   flag=2 name=J_name_q ID=1229
+   flag=2 name=I_name_r ID=1238
+   flag=2 name=H_name_s ID=1230
+   flag=2 name=G_name_t ID=1237
+   flag=2 name=F_name_u ID=1231
+   flag=2 name=E_name_v ID=1236
+   flag=2 name=D_name_w ID=1232
+   flag=2 name=C_name_x ID=1235
+   flag=2 name=B_name_y ID=1233
+---calling checkAll(): after removing every second employee
+all results correct
+
+The list of Employees:
+   flag=2 name=T_name_g ID=1224
+   flag=2 name=R_name_i ID=1225
+   flag=2 name=P_name_k ID=1226
+   flag=2 name=N_name_m ID=1227
+   flag=2 name=L_name_o ID=1228
+   flag=2 name=J_name_q ID=1229
+   flag=2 name=H_name_s ID=1230
+   flag=2 name=F_name_u ID=1231
+   flag=2 name=D_name_w ID=1232
+   flag=2 name=B_name_y ID=1233

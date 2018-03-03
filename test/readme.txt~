@@ -1,0 +1,3 @@
+clean.bat cleans all the data, *.obj, *.exe, and results files for all tests
+regr.bat runs a complete regression sequence (all the tests)
+check.bat checks the results of all the tests
